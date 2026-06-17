@@ -14,4 +14,11 @@
   body {
     @apply bg-gray-50 text-gray-900 antialiased;
   }
+  /* TailwindCSS 4 移除了按钮默认 cursor:pointer，补回来 */
+  button,
+  [type="button"],
+  [type="submit"],
+  [type="reset"] {
+    cursor: pointer;
+  }
 }
